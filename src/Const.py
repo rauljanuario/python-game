@@ -32,7 +32,7 @@ ENTITY_HEALTH = {
     'level2p1': 999,
     'level2p2': 999,
     'level2p3': 999,
-    'player1': 300,
+    'player1': 250,
     'player1shot': 1,
     'enemy1': 50,
     'enemy1shot': 1,
@@ -71,9 +71,9 @@ ENTITY_SCORE = {
 }
 
 ENTITY_SHOT_DELAY = {
-    'player1': 20,
-    'enemy1': 100,
-    'enemy2': 200,
+    'player1': 10,
+    'enemy1': 80,
+    'enemy2': 100,
 }
 
 # M
@@ -95,7 +95,7 @@ SPAWN_TIME = 4000
 
 # T
 TIMEOUT_STEP = 100  # 100ms
-TIMEOUT_LEVEL = 30000  # 20s
+TIMEOUT_LEVEL = 40000  # 20s
 # W
 WIN_WIDTH = 576
 WIN_HEIGHT = 324
