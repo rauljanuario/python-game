@@ -56,7 +56,7 @@ class Game:
         font_text = pygame.font.SysFont('Arial', 24)
       
         title_surf = font_title.render('GAME OVER', True, C_RED) 
-        text_surf = font_text.render('Press any key to return to the menu.', True, C_WHITE) 
+        text_surf = font_text.render('Press space key to return to the menu.', True, C_WHITE) 
         
         title_rect = title_surf.get_rect(center=(WIN_WIDTH // 2, WIN_HEIGHT // 2 - 30))
         text_rect = text_surf.get_rect(center=(WIN_WIDTH // 2, WIN_HEIGHT // 2 + 40))
@@ -72,4 +72,5 @@ class Game:
                     pygame.quit()
                     quit()
                 if event.type == pygame.KEYDOWN: 
-                    waiting = False
+                    if event.key == pygame.K_SPACE:
+                        waiting = False
